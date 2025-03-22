@@ -1,13 +1,36 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import type { Repo } from '../../util/types';
+	import { fetchPinnedRepos } from '../../util/github';
 
-	let repos: Repo[];
+	let repos: Repo[] = [];
+	let loading = true;
 
-	onMount(async () => {
-		const response = await fetch('https://gh-pinned-repos.egoist.dev/?username=xwedx00');
-		repos = await response.json();
-	});
+	// Function to fetch pinned repositories
+async function fetchRepos() {
+	try {
+		console.log('Fetching repos...');
+		const response = await fetchPinnedRepos();
+		console.log('Fetched data:', response);
+
+		// Transform the fetched data to match expected structure
+		repos = response.map(repo => ({
+			link: repo.url,
+			owner: "DevAdi-Man", // If all repos belong to you, otherwise extract from API
+			repo: repo.name,
+			description: repo.description || "No description available",
+			languageColor: repo.primaryLanguage?.color || "#cccccc",
+			language: repo.primaryLanguage?.name || "Unknown",
+			stars: repo.stargazerCount,
+			forks: repo.forkCount
+		}));
+	} catch (error) {
+		console.error('Failed to fetch repositories:', error);
+	} finally {
+		loading = false;
+	}
+}
+	onMount(fetchRepos);
 </script>
 
 <section class="wrapper" id="work">
@@ -15,7 +38,13 @@
 		<h2><span>code</span>:work</h2>
 	</div>
 	<div class="grid">
-		{#if repos}
+		{#if loading}
+			<!-- Shimmer loading effect -->
+			<div class="repo-card shimmer" />
+			<div class="repo-card shimmer" />
+			<div class="repo-card shimmer" />
+			<div class="repo-card shimmer" />
+		{:else if repos.length}
 			{#each repos as { link, owner, repo, description, languageColor, language, stars, forks }}
 				<a href={link} target="_blank" rel="noreferrer">
 					<div class="repo-card">
@@ -41,27 +70,24 @@
 								<span class="dot" style="background-color: {languageColor}" />
 								<h6>{language}</h6>
 							</div>
-							<div class="info">
-								{#if stars}
+							{#if stars}
+								<div class="info">
 									<img src="icons/star.svg" id="star" alt="star" />
 									<h6>{stars}</h6>
-								{/if}
-							</div>
-							<div class="info">
-								{#if forks}
+								</div>
+							{/if}
+							{#if forks}
+								<div class="info">
 									<img src="icons/fork.svg" id="fork" alt="fork" />
 									<h6>{forks}</h6>
-								{/if}
-							</div>
+								</div>
+							{/if}
 						</div>
 					</div>
 				</a>
 			{/each}
 		{:else}
-			<div class="repo-card shimmer" />
-			<div class="repo-card shimmer" />
-			<div class="repo-card shimmer" />
-			<div class="repo-card shimmer" />
+			<p>No repositories found.</p>
 		{/if}
 	</div>
 </section>
@@ -78,6 +104,7 @@
 			justify-content: left;
 		}
 	}
+
 	.repo-card {
 		padding: 1rem 1.25rem;
 		background-color: var(--neutral-two);
@@ -110,7 +137,6 @@
 		animation-iteration-count: infinite;
 		animation-name: shimmer;
 		animation-timing-function: linear;
-		background: #ddd;
 		background: linear-gradient(
 			to right,
 			var(--neutral-two) 8%,
@@ -182,10 +208,6 @@
 		grid-template-columns: 1fr 1fr;
 		margin-bottom: 3rem;
 		position: relative;
-
-		&:before {
-			@include outlineText($content: '⤬', $translateX: 760%, $translateY: -35%);
-		}
 
 		@media (max-width: 600px) {
 			grid-template-columns: 1fr;

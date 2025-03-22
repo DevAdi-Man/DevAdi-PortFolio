@@ -12,10 +12,10 @@
 
 <section id="home" class="wrapper">
 	<div>
-		<h1>𝕩00</h1>
+		<h1>Devs_Adi</h1>
 		<h5>
-			"Bringing Linux to Life, One Byte at a Time through Tech Tinkering!"<br />Attempting to
-			program.
+			Skilled in React Native, MERN, TypeScript, and Node.js, building scalable applications.
+			<br />Exploring robotics and love reading manhwas in my free time
 		</h5>
 		<div class="socials">
 			<Socials />
@@ -55,8 +55,13 @@
 	}
 
 	h1::before {
-		@include outlineText($content: '⌥', $translateX: -125%,$translateY: -50%,
-			$fontSize: 100px, $letterSpacing: -0.1em);
+		@include outlineText(
+			$content: '⌥',
+			$translateX: -125%,
+			$translateY: -50%,
+			$fontSize: 100px,
+			$letterSpacing: -0.1em
+		);
 	}
 
 	@media screen and (max-width: 1240px) {
