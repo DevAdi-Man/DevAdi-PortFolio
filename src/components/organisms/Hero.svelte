@@ -12,7 +12,7 @@
 
 <section id="home" class="wrapper">
 	<div>
-		<h1>Devs_Adi</h1>
+		<h1>Devs</h1>
 		<h5>
 			Skilled in React Native, MERN, TypeScript, and Node.js, building scalable applications.
 			<br />Exploring robotics and love reading manhwas in my free time

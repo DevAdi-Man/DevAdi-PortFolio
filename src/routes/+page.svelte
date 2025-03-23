@@ -4,12 +4,14 @@
 	import About from '../components/organisms/About.svelte';
 	import Repos from '../components/organisms/Repos.svelte';
 	import Footer from '../components/molecules/Footer.svelte';
+	import ImageGrid from '../components/organisms/ImageGrid.svelte';
 </script>
 
 <NavHost />
 <main>
 	<Hero />
 	<About />
+	<ImageGrid />
 	<Repos />
 	<Footer />
 </main>
