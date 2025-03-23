@@ -30,7 +30,7 @@
 			me a lot along the way. Around <span>2020</span>, I developed a strong passion for
 			programming. I enjoy contributing to{' '}
 			<Tooltip tip="He's lying—he hasn't contributed to ANYTHING (yet!)">
-				<a href="https://github.com/xwedx00" target="_blank" rel="noreferrer">
+				<a href="https://github.com/DevAdi-Man" target="_blank" rel="noreferrer">
 					<span>open source</span>
 				</a>
 			</Tooltip>
