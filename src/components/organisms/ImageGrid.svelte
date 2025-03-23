@@ -10,7 +10,7 @@ let allImages = Array.from({ length: 31 }, (_, i) => ({
 let images = [];
 
 function shuffleAndSelect() {
-  images = allImages.sort(() => Math.random() - 0.5).slice(0, 12); // Only 3 rows
+  images = allImages.sort(() => Math.random() - 0.5).slice(0, 8); // Only 3 rows
 }
 
 let interval;
@@ -160,8 +160,8 @@ function closeModal(event) {
 
 @media (max-width: 768px) {
   .grid {
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    grid-auto-rows: 180px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
   }
   
   .modal-content {
