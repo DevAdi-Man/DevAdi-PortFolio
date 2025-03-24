@@ -50,15 +50,15 @@
 		<p>
 			Hey there, I'm Aditya Raj! I'm
 			<Tooltip tip={age}><span>{Math.floor(Number(age))}</span></Tooltip> years old. My journey started
-			in <span>2017</span> with tinkering around random Linux services, which eventually led to deep
-			Linux customizations—teaching me a lot along the way. Around <span>2020</span>, I developed a
+			in <span>2020</span> with tinkering around random Linux services, which eventually led to deep
+			Linux customizations—teaching me a lot along the way. Around <span>2023</span>, I developed a
 			strong passion for programming. I enjoy contributing to
 			<Tooltip tip="He's lying—he hasn't contributed to ANYTHING (yet!)">
 				<a href="https://github.com/DevAdi-Man" target="_blank" rel="noreferrer">
 					<span>open source</span>
 				</a>
 			</Tooltip>
-			as a developer, which is probably why you’ve ended up here. Currently, I'm diving into **Svelte
+			as a developer, which is probably why you’ve ended up here. Currently, I'm diving into **React-Native
 			and TypeScript**, figuring things out (and occasionally breaking them) one bug at a time.
 		</p>
 	</div>
