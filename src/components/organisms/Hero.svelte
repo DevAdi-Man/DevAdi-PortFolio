@@ -58,8 +58,8 @@
 		@include outlineText(
 			$content: '⌥',
 			$translateX: -125%,
-			$translateY: -50%,
-			$fontSize: 100px,
+			$translateY: -40%,
+			$fontSize: 150px,
 			$letterSpacing: -0.1em
 		);
 	}

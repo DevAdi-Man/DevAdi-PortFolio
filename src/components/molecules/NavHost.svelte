@@ -3,7 +3,7 @@
 	let y: number;
 </script>
 
-<nav>
+<nav class="blur">
 	<div class:scrolled={y > 20}>
 		<ul>
 			<Nav href="#home" section="/" isSelected={y < 350} />
@@ -21,6 +21,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		
 	}
 	div {
 		width: 100%;
