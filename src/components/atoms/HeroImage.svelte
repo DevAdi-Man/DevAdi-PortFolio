@@ -43,7 +43,8 @@
 
 	.img {
 		border-radius: 50px;
-		border: 2px solid rgba(0, 0, 0, 0);
+		border: 1px solid rgba(0, 0, 0, 0);
+		// border: 1px solid transparent;
 		width: 425px;
 		height: 420px;
 		z-index: 1;
@@ -63,7 +64,6 @@
 			width: clamp(340px, 40vw, 425px);
 			height: clamp(300px, 40vw, 400px);
 		}
-		
 	}
 
 	.img-container {
