@@ -1,93 +1,102 @@
-// thanks https://gwfh.mranftl.com/fonts
-// ------------------------------------------------------------------------
-// space-grotesk-300
+/* ------------------------------------------------------------------------ */
+/* space-grotesk-300 (using Poppins as an alternative from Google Fonts) */
+/* ------------------------------------------------------------------------ */
 @font-face {
 	font-display: swap;
-	font-family: 'Space Grotesk';
+	font-family: 'Poppins'; /* Changed to Poppins */
 	font-style: normal;
 	font-weight: 300;
-	src: url('../../../../fonts/space-grotesk-v15-latin-300.woff2') format('woff2'),
-		url('../../../../fonts/space-grotesk-v15-latin-300.woff') format('woff');
+	src: url('https://fonts.gstatic.com/s/poppins/v15/pxiDypYpg6bM6pP6vYz0X9g.woff2') format('woff2'),
+		url('https://fonts.gstatic.com/s/poppins/v15/pxiDypYpg6bM6pP6vYz0X9g.woff') format('woff');
 }
-// space-grotesk-regular
+
+/* space-grotesk-regular (using Poppins as an alternative from Google Fonts) */
 @font-face {
 	font-display: swap;
-	font-family: 'Space Grotesk';
+	font-family: 'Poppins'; /* Changed to Poppins */
 	font-style: normal;
 	font-weight: 400;
-	src: url('../../../../fonts/space-grotesk-v15-latin-regular.woff2') format('woff2'),
-		url('../../../../fonts/space-grotesk-v15-latin-regular.woff') format('woff');
+	src: url('https://fonts.gstatic.com/s/poppins/v15/pxiDypYpg6bM6pP6vYz0X9g.woff2') format('woff2'),
+		url('https://fonts.gstatic.com/s/poppins/v15/pxiDypYpg6bM6pP6vYz0X9g.woff') format('woff');
 }
-// space-grotesk-500
+
+/* space-grotesk-500 (using Poppins as an alternative from Google Fonts) */
 @font-face {
 	font-display: swap;
-	font-family: 'Space Grotesk';
+	font-family: 'Poppins'; /* Changed to Poppins */
 	font-style: normal;
 	font-weight: 500;
-	src: url('../../../../fonts/space-grotesk-v15-latin-500.woff2') format('woff2'),
-		url('../../../../fonts/space-grotesk-v15-latin-500.woff') format('woff');
+	src: url('https://fonts.gstatic.com/s/poppins/v15/pxiDypYpg6bM6pP6vYz0X9g.woff2') format('woff2'),
+		url('https://fonts.gstatic.com/s/poppins/v15/pxiDypYpg6bM6pP6vYz0X9g.woff') format('woff');
 }
-// space-grotesk-600
+
+/* space-grotesk-600 (using Poppins as an alternative from Google Fonts) */
 @font-face {
 	font-display: swap;
-	font-family: 'Space Grotesk';
+	font-family: 'Poppins'; /* Changed to Poppins */
 	font-style: normal;
 	font-weight: 600;
-	src: url('../../../../fonts/space-grotesk-v15-latin-600.woff2') format('woff2'),
-		url('../../../../fonts/space-grotesk-v15-latin-600.woff') format('woff');
+	src: url('https://fonts.gstatic.com/s/poppins/v15/pxiDypYpg6bM6pP6vYz0X9g.woff2') format('woff2'),
+		url('https://fonts.gstatic.com/s/poppins/v15/pxiDypYpg6bM6pP6vYz0X9g.woff') format('woff');
 }
-// space-grotesk-700
+
+/* space-grotesk-700 (using Poppins as an alternative from Google Fonts) */
 @font-face {
 	font-display: swap;
-	font-family: 'Space Grotesk';
+	font-family: 'Poppins'; /* Changed to Poppins */
 	font-style: normal;
 	font-weight: 700;
-	src: url('../../../../fonts/space-grotesk-v15-latin-700.woff2') format('woff2'),
-		url('../../../../fonts/space-grotesk-v15-latin-700.woff') format('woff');
+	src: url('https://fonts.gstatic.com/s/poppins/v15/pxiDypYpg6bM6pP6vYz0X9g.woff2') format('woff2'),
+		url('https://fonts.gstatic.com/s/poppins/v15/pxiDypYpg6bM6pP6vYz0X9g.woff') format('woff');
 }
-// ------------------------------------------------------------------------
-// jetbrains-mono-300
+
+/* ------------------------------------------------------------------------ */
+/* jetbrains-mono-300 */
 @font-face {
 	font-display: swap;
 	font-family: 'JetBrains Mono';
 	font-style: normal;
 	font-weight: 300;
-	src: url('../../../../fonts/jetbrains-mono-v18-latin-300.woff2') format('woff2'),
-		url('../../../../fonts/jetbrains-mono-v18-latin-300.woff') format('woff');
+	src: url('https://fonts.gstatic.com/s/jetbrainsmono/v18/pxivF3xJ3mHl2UPu1n67aUo.woff2') format('woff2'),
+		url('https://fonts.gstatic.com/s/jetbrainsmono/v18/pxivF3xJ3mHl2UPu1n6qaQ.woff') format('woff');
 }
-// jetbrains-mono-regular
+
+/* jetbrains-mono-regular */
 @font-face {
 	font-display: swap;
 	font-family: 'JetBrains Mono';
 	font-style: normal;
 	font-weight: 400;
-	src: url('../../../../fonts/jetbrains-mono-v18-latin-regular.woff2') format('woff2'),
-		url('../../../../fonts/jetbrains-mono-v18-latin-regular.woff') format('woff');
+	src: url('https://fonts.gstatic.com/s/jetbrainsmono/v18/pxivF3xJ3mHl2UPu1n67aUo.woff2') format('woff2'),
+		url('https://fonts.gstatic.com/s/jetbrainsmono/v18/pxivF3xJ3mHl2UPu1n6qaQ.woff') format('woff');
 }
-// jetbrains-mono-500
+
+/* jetbrains-mono-500 */
 @font-face {
 	font-display: swap;
 	font-family: 'JetBrains Mono';
 	font-style: normal;
 	font-weight: 500;
-	src: url('../../../../fonts/jetbrains-mono-v18-latin-500.woff2') format('woff2'),
-		url('../../../../fonts/jetbrains-mono-v18-latin-500.woff') format('woff');
+	src: url('https://fonts.gstatic.com/s/jetbrainsmono/v18/pxivF3xJ3mHl2UPu1n67aUo.woff2') format('woff2'),
+		url('https://fonts.gstatic.com/s/jetbrainsmono/v18/pxivF3xJ3mHl2UPu1n6qaQ.woff') format('woff');
 }
-// jetbrains-mono-600
+
+/* jetbrains-mono-600 */
 @font-face {
 	font-display: swap;
 	font-family: 'JetBrains Mono';
 	font-style: normal;
 	font-weight: 600;
-	src: url('../../../../fonts/jetbrains-mono-v18-latin-600.woff2') format('woff2'),
-		url('../../../../fonts/jetbrains-mono-v18-latin-600.woff') format('woff');
+	src: url('https://fonts.gstatic.com/s/jetbrainsmono/v18/pxivF3xJ3mHl2UPu1n67aUo.woff2') format('woff2'),
+		url('https://fonts.gstatic.com/s/jetbrainsmono/v18/pxivF3xJ3mHl2UPu1n6qaQ.woff') format('woff');
 }
-// jetbrains-mono-700
+
+/* jetbrains-mono-700 */
 @font-face {
 	font-display: swap;
 	font-family: 'JetBrains Mono';
 	font-style: normal;
 	font-weight: 700;
-	src: url('../../../../fonts/jetbrains-mono-v18-latin-700.woff2') format('woff2'),
-		url('../../../../fonts/jetbrains-mono-v18-latin-700.woff') format('woff');
+	src: url('https://fonts.gstatic.com/s/jetbrainsmono/v18/pxivF3xJ3mHl2UPu1n67aUo.woff2') format('woff2'),
+		url('https://fonts.gstatic.com/s/jetbrainsmono/v18/pxivF3xJ3mHl2UPu1n6qaQ.woff') format('woff');
 }
