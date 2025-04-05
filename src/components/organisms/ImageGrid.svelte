@@ -2,7 +2,7 @@
 // @ts-nocheck
 import { onMount, onDestroy } from "svelte";
 
-let allImages = Array.from({ length: 31 }, (_, i) => ({
+let allImages = Array.from({ length: 35 }, (_, i) => ({
   src: `/images/a${i + 1}.jpg`,
   name: `a${i + 1}`,
 }));
@@ -191,7 +191,7 @@ function closeModal(event) {
   <!-- svelte-ignore a11y-no-static-element-interactions -->
   <!-- svelte-ignore a11y-click-events-have-key-events -->
   <div class="modal" on:click={closeModal}>
-    <button class="close-btn" on:click={closeModal}>Close</button>
+    <!-- <button class="close-btn" on:click={closeModal}>Close</button> -->
     <div class="modal-content">
       <img src={selectedImage.src} alt={selectedImage.name} />
     </div>
