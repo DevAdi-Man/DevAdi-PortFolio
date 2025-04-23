@@ -72,7 +72,7 @@
 		left: 0;
 		width: 100%;
 		height: 100vh;
-		background-color: #1a1616;
+		background-color: #1B1825;
 		color: white;
 		z-index: 100;
 		display: flex;
