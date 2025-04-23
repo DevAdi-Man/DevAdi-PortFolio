@@ -15,8 +15,19 @@
 	let textIndex = 0;
 
 	const texts = [
-		"Hello!!", "Hola!!", "Bonjour!!", "Hallo!!", "Ciao!!",
-		"Namaste!!", "こんにちは!!", "안녕하세요!!", "Привет!!", "مرحبا!!"
+		'नमस्ते',
+		'Hello',
+		'Hola',
+		'Bonjour',
+		'Hallo',
+		'Ciao',
+		'こんにちは',
+		'你好',
+		'안녕하세요',
+		'ਸਤ ਸ੍ਰੀ ਅਕਾਲ',
+		'வணக்கம்',
+		'హలో',
+		'Xin chào'
 	];
 
 	/**
@@ -72,7 +83,7 @@
 		left: 0;
 		width: 100%;
 		height: 100vh;
-		background-color: #1B1825;
+		background-color: #1b1825;
 		color: white;
 		z-index: 100;
 		display: flex;
