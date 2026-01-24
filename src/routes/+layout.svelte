@@ -6,27 +6,23 @@
 
 	let loading = true;
 	let playSFX: (() => void) | undefined;
+	let audioCtx: AudioContext;
+	let buffer: AudioBuffer;
 
 	onMount(() => {
-		// need to create our own audio context as the default Audio() pauses any music playing
-		let buffer: AudioBuffer;
-		const audioCtx = new window.AudioContext();
-		const request = new XMLHttpRequest();
-		request.open('GET', 'sounds/click.ogg', true);
-		request.responseType = 'arraybuffer';
-		request.onload = function () {
-			const audioData: ArrayBuffer = request.response;
-			audioCtx.decodeAudioData(audioData, function (decodedBuffer) {
-				buffer = decodedBuffer;
-				playSFX = () => {
-					const source = audioCtx.createBufferSource();
-					source.buffer = buffer;
-					source.connect(audioCtx.destination);
-					source.start(0);
-				};
-			});
+		playSFX = async () => {
+			if (!audioCtx) {
+				audioCtx = new window.AudioContext();
+				const response = await fetch('sounds/click.ogg');
+				const arrayBuffer = await response.arrayBuffer();
+				buffer = await audioCtx.decodeAudioData(arrayBuffer);
+			}
+
+			const source = audioCtx.createBufferSource();
+			source.buffer = buffer;
+			source.connect(audioCtx.destination);
+			source.start(0);
 		};
-		request.send();
 
 		if (document.readyState === 'complete') {
 			loading = false;

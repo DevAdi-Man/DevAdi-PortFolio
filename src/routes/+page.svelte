@@ -7,6 +7,7 @@
 	import Footer from '../components/molecules/Footer.svelte';
 	import ImageGrid from '../components/organisms/ImageGrid.svelte';
 
+
 	let loading = true;
 
 	import { onMount, onDestroy } from 'svelte';
@@ -72,8 +73,8 @@
 		<About />
 		<ImageGrid />
 		<Repos />
-		<Footer />
 	</main>
+	<Footer />
 {/if}
 
 <style>

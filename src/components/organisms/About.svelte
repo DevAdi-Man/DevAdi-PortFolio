@@ -35,7 +35,7 @@
 <section id="about" class="wrapper">
 	<div class="profile">
 		<!-- svelte-ignore a11y-img-redundant-alt -->
-		<img src="/images/profileImage.png" alt="Profile Picture" class="avatar" />
+		<img src="/images/pika.jpg" alt="Profile Picture" class="avatar" />
 		<div class="info">
 			<p class="name">@adityaraj05441</p>
 			<p class="time">India</p>

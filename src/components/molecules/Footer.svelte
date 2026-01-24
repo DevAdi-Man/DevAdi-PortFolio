@@ -10,7 +10,7 @@
 		Made with pain. &#60;3
 		<Tooltip tip="you're here"><span>V2</span></Tooltip>
 	</h6>
-	<p>Data Deletion Request: If you wish to delete your account and all associated data for the pixory app, please contact me via the email form below [or at adityaraj99106@gmail.com] with the subject line 'Delete Account'. I will manually remove your data within [e.g., 30] days.</p>
+	<p>Data Deletion Request: If you wish to delete your account and all associated data for the pixory app, please contact me via the email form above [or at adityaraj99106@gmail.com] with the subject line 'Delete Account'. I will manually remove your data within [e.g., 30] days.</p>
 </footer>
 
 <style lang="scss">
@@ -20,6 +20,7 @@
 		border: 0;
 		width: 100%;
 		margin-bottom: 2rem;
+
 
 		@media screen and (max-width: 768px) {
 			margin-bottom: 1.5rem;
@@ -31,9 +32,11 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+        flex-wrap: wrap;
 
 		@media screen and (max-width: 768px) {
 			flex-direction: column;
+            gap: 1rem;
 		}
 	}
 
@@ -54,7 +57,10 @@
 	}
 
 	p {
-		text-align: center;
-		margin-top: 1rem;
-	}
+    	flex-basis: 100%;
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 0.8rem;
+        opacity: 0.8;
+    }
 </style>

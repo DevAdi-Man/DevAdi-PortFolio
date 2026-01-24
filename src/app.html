@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link id="fav" rel="icon" href="/logo.png" />
+		<link id="fav" rel="icon" href="/logo.jpg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="description" content="-_- Website Wasn't Enough Huh ?" />
 		%sveltekit.head%
@@ -10,4 +10,15 @@
 	<body>
 		<div>%sveltekit.body%</div>
 	</body>
+	<style>
+		body {
+			display: flex;
+			flex-direction: column;
+			min-height: 100vh;
+		}
+
+		div[style="display: contents"] {
+			flex: 1;
+		}
+	</style>
 </html>

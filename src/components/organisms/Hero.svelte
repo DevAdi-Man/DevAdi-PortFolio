@@ -22,7 +22,7 @@
 		</div>
 		<Button side on:click={handleClick} on:keypress={handleClick}>Discover my work ↓</Button>
 	</div>
-	<HeroImage src="/images/profileImage.png" />
+	<HeroImage src="/images/profileImage.gif" />
 </section>
 
 <style lang="scss">

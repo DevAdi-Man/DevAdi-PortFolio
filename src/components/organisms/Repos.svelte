@@ -9,9 +9,7 @@
 	// Function to fetch pinned repositories
 async function fetchRepos() {
 	try {
-		console.log('Fetching repos...');
 		const response = await fetchPinnedRepos();
-		console.log('Fetched data:', response);
 
 		// Transform the fetched data to match expected structure
 		repos = response.map(repo => ({
@@ -46,7 +44,7 @@ async function fetchRepos() {
 			<div class="repo-card shimmer" />
 		{:else if repos.length}
 			{#each repos as { link, owner, repo, description, languageColor, language, stars, forks }}
-				<a href={link} target="_blank" rel="noreferrer">
+				<a href="/work/{repo.toLowerCase()}">
 					<div class="repo-card">
 						<div id="top-part">
 							<div class="info">
