@@ -1,4 +1,5 @@
 <script lang="ts">
+	export let src = 'purple.gif';
 	let zoom: boolean;
 	let xRotation: number;
 	let yRotation: number;
@@ -23,7 +24,7 @@
 		on:mousemove={enterRotate3D}
 		on:mouseleave={leaveRotate3D}
 		class="img"
-		style:background-image="url(purple.gif)"
+		style:background-image="url({src})"
 		style:transform="perspective(500px) {zoom ? 'scale(0.9)' : ''} rotateX({xRotation}deg) rotateY({yRotation}deg)"
 	/>
 </div>
