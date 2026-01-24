@@ -10,6 +10,7 @@
 		Made with pain. &#60;3
 		<Tooltip tip="you're here"><span>V2</span></Tooltip>
 	</h6>
+	<p>Data Deletion Request: If you wish to delete your account and all associated data for the pixory app, please contact me via the email form below [or at adityaraj99106@gmail.com] with the subject line 'Delete Account'. I will manually remove your data within [e.g., 30] days.</p>
 </footer>
 
 <style lang="scss">
@@ -50,5 +51,10 @@
 		width: fit-content;
 		margin-left: 1rem;
 		margin-right: 0.4rem;
+	}
+
+	p {
+		text-align: center;
+		margin-top: 1rem;
 	}
 </style>
